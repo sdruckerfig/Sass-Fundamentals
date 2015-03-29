@@ -1,0 +1,106 @@
+/* css Zen Garden submission 218 - 'Apothecary', by Trent Walton, http: //www.trentwalton.com/ */
+/* css released under Creative Commons License - http: //creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+// base colors
+$textColor: #3f3d3a;
+$linkColor: #e5452c;
+$linkHoverColor: complement($linkColor);
+$backgroundColor: #faf3e6;
+$headingColor:  #272625;
+
+// fonts
+$baseFont: "ltc-bodoni-175",serif;
+$secondaryFont: "refrigerator-deluxe",sans-serif;
+
+// content
+$clientName: "Big Dave G";
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: auto;
+  background: $backgroundColor;
+  background-size: 22em;
+}
+
+body {
+  font: 112.5%/1.3 $baseFont;
+  color: $textColor;
+  overflow: hidden;
+}
+
+body:before, body:after {
+  content: '';
+  display: block;
+  width: 0; 
+  height: 0; 
+}
+
+body:before {
+  border-left: 45px solid $backgroundColor;
+  border-right: 45px solid $backgroundColor;
+  border-top: 45px solid transparent;
+  background: #f7644d url('../images/img-halftone.png') repeat;
+  margin: 0 auto -45px;
+}
+
+body:after {
+  border-left: 7em solid $backgroundColor;
+  border-right: 7em solid $backgroundColor;
+  border-bottom: 10em solid transparent;
+  background: #ffb14d url('../images/img-halftone.png') repeat;
+  margin: -10em auto 0;
+}
+
+.page-wrapper {
+  width: 100%;
+  margin: 0.25em auto;
+  max-width: 1800px;
+  position: relative;
+  padding: 0 4%;
+}
+
+.page-wrapper:before {
+  content: "";
+  height: 20px;
+  background: 
+    url('../images/img-lg-horiz-border.png') repeat-x 0 -2px;
+  background-size: 40em;
+  display: block;
+}
+
+.page-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1, h2, h3, h4, h5 {
+  text-align: center;
+  color: $headingColor;
+  text-transform: uppercase;
+}
+
+a {
+  color: $linkColor;
+}
+
+a:hover, a:focus {
+  color: $linkHoverColor;
+}
+
+p {
+  margin-bottom: 0.15em;
+}
+
+
+
+
+
+
+
+
