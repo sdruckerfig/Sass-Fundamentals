@@ -1,0 +1,20 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 1, ../mystuff/_foo.scss */
+.validationError, .requiredToFixError {
+  border: 1px solid yellow;
+  background-color: red;
+  color: white;
+}
+
+/* line 6, ../mystuff/_foo.scss */
+.attention:after, .requiredToFixError:after {
+  content: url("images/stopsign.png");
+}
+
+/* line 9, ../mystuff/_foo.scss */
+.requiredToFixError {
+  border: 1px solid red;
+}

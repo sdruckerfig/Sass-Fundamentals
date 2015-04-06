@@ -1,0 +1,13 @@
+.validationError {
+  border: 1px solid yellow;
+  background-color: red;
+  color: white;
+}
+.attention:after {
+  content: url('images/stopsign.png');
+}
+.requiredToFixError {
+  border: 1px solid red;
+  @extend .validationError;
+  @extend .attention;
+}
