@@ -1,0 +1,157 @@
+
+@media (min-width:800px) {
+  
+  .intro {
+    padding-top: 8em;
+  }
+  
+  .intro p,
+  .preamble,
+  .design-selection,
+  .design-selection ul,
+  .design-archives,
+  .zen-resources ul,
+  .participation p,
+  .benefits h3,
+  .benefits p {
+    max-width: 36rem;
+  }
+  
+  
+  .explanation,
+  .requirements {
+    max-width: 36rem;
+  }
+  
+  body:before {
+    border-left: 115px solid $backgroundColor;
+    border-right: 115px solid $backgroundColor;
+    border-top: 115px solid transparent;
+    margin: 0 auto -6em;
+  }
+  
+  .intro h1 {
+    font-size: 5.65em;
+  }
+  
+  .intro h1:before {
+    font-size: 2rem;
+    letter-spacing: 0.175rem;
+    font-weight: 700;
+    background: url('../images/img-sprite.png') no-repeat center 0.25em;
+    background-size: 42rem;
+    margin-bottom: 1em;
+  }
+  
+  .intro h2 {
+    padding-top: 4.5em;
+    margin-top: 0.7em;
+    margin-bottom: 0em;
+    background-size: 1.75em;
+  }
+  
+  .preamble h3 {
+    font-size: 3em;
+  }
+  
+  
+  .zen-resources li {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .zen-resources li a {
+    margin: 0 0.75em;
+  }
+
+  .zen-resources li:first-child a {
+    margin-left: 0;
+  }
+
+  .zen-resources li:last-child a {
+    margin-right: 0;
+  }
+  
+  .zen-resources a {
+    font-size: 1em;
+  }
+  
+  .explanation {
+    padding: 13.75em 0 0.5em;
+    width: 84%;
+    margin: 1px auto 0;
+    position: relative;
+    background: $backgroundColor;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 2em;
+    -moz-column-count: 2;
+    -moz-column-gap: 2em;
+    -o-column-count: 2;
+    -o-column-gap: 2em;
+    column-count: 2;
+    column-gap: 2em;
+  }
+     
+  .explanation h3 {
+    font-size: 3.9em;
+    font-style: italic;
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+  
+  .participation h3 {
+    font-size: 5.25em;
+    background-size: 9em;
+  }
+  
+  .benefits:before {
+    bottom: 6.5rem;
+  }
+
+  .benefits:after {
+    bottom: -12.5rem;
+  }
+  
+  .benefits p:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 26em; 
+    margin: 0 auto -30.5em;
+    padding-bottom: 6em;
+    background:  url('../images/img-look-right.png') no-repeat center 40%;
+    background-size: 28%;
+  }
+  
+  .benefits h3 {
+    font-size: 3.75em;
+  }
+  
+  .requirements {
+    padding: 11.5em 0 2.5em;
+    width: 84%;
+    margin: 0 auto 4.15em;
+    background-size: 68rem;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 2em;
+    -moz-column-count: 2;
+    -moz-column-gap: 2em;
+    -o-column-count: 2;
+    -o-column-gap: 2em;
+    column-count: 2;
+    column-gap: 2em;
+    line-height: 1.475;
+  }
+  
+  .requirements h3 {
+    font-size: 5.5em;
+    margin-bottom: 0.725em;
+    padding-bottom: 1.5rem;
+    background-size: 8em;
+  }
+  
+  .zen-github:after, .zen-validate-html:after {
+    font-size: 1.12rem;
+  }
+}

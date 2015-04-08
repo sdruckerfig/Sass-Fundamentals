@@ -1,13 +1,90 @@
-.validationError {
-  border: 1px solid yellow;
-  background-color: red;
-  color: white;
+@mixin applyVendorPrefixes ($property, $value) {
+	-webkit-#{$property} : $value;
+	-moz-#{$property} : $value;
+	-o-#{$property} : $value;
+	#{$property} : $value;
 }
-.attention:after {
-  content: url('images/stopsign.png');
+
+@mixin columnCount ($numCols: 2) {
+	@include applyVendorPrefixes($property: 'column-count', $value: $numCols);
 }
-.requiredToFixError {
-  border: 1px solid red;
-  @extend .validationError;
-  @extend .attention;
+
+@mixin columnGap ($size) {
+	@include applyVendorPrefixes($property: 'column-gap', $value: $size);
 }
+
+.explanation {
+    @include columnCount;
+}
+
+@mixin recessedInputs() {
+  input {
+  	  font-size: 20px;
+	  display: block;
+	  border: 1px solid silver;
+	  background: linear-gradient(#eee, #fff);
+	  transition: all 0.3s ease-out;
+	  padding: 5px;
+	  color: #555;
+
+		&:focus {
+		  outline: none;
+		  background-position: 0 -1.7em;
+		}
+	}
+}
+
+@include recessedInputs;
+
+
+@mixin backgroundRadialGradient ($gradient...) {
+
+	background: -webkit-radial-gradient($gradient);
+    background: -moz-radial-gradient($gradient);
+    background: -ms-radial-gradient($gradient);
+    // background: radial-gradient($gradient);
+
+}
+
+body {
+	@include backgroundRadialGradient (rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
+}
+
+@mixin google-webfont($fontName, $fontWeights...) {
+	
+	// validate fontWeights
+	@each $weight in $fontWeights {
+		@if type-of($weight) != "number" {
+			@error "Mixin Google WebFont was passed an illegal font weight- (#{$weight}) must be a number."
+		}
+	}
+	
+    @import url('http://fonts.googleapis.com/css?family=#{$fontName}:#{$fontWeights}');
+
+}
+
+@include google-webfont(Oswald,400, 800);
+
+
+@function sum($list) {
+  
+  $result: 0;
+  
+  @each $item in $list {
+    @if type-of($item) == number {
+      @if unitless($item) {
+        $result: $result + $item;
+      } @else {
+      	@error $item + " is not a number";
+      }
+    } @else {
+      @error  $item + " is not a number";
+    }
+  }
+  @return $result;
+}
+
+$list : 1 1;
+$theSum: sum($list);
+@debug $theSum;
+

@@ -1,0 +1,182 @@
+
+/* -------SIDEBAR ASIDE------- */
+.design-selection h3 {
+  font-family: $secondaryFont;
+  font-size: 2em;
+  letter-spacing: 0.05em;
+  padding: 0.5em 0;
+  margin: 0.35em auto 0.75em;
+  background: 
+    url('../images/img-lg-horiz-border.png') repeat-x top right,
+    url('../images/img-lg-horiz-border.png') repeat-x bottom left;
+  background-size: 15em;
+  line-height: 1;
+}
+
+.design-selection {
+  margin: 0 auto;
+}
+
+.design-selection ul {
+  list-style-type: none;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.design-selection li {
+  color: transparent;
+  margin-bottom: 0.28em;
+  clear: both;
+}
+
+.design-selection li a {
+  text-decoration: none;
+  color: $textColor;
+}
+
+.sidebar a:hover, sidebar a:focus {
+  color: $linkColor;
+}
+
+.design-name {
+  font-style: italic;
+  background: $backgroundColor;
+  padding-right: 0.25em;
+}
+
+.design-name:after {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    color: $textColor;
+    content: "....................................................................................................................."
+}
+
+.designer-name {
+  float: right;
+  font-family: $secondaryFont;
+  font-size: 1em;
+  text-transform: uppercase;
+  background: $backgroundColor;
+  padding-left: 0.25em;
+}
+
+h3.archives, h3.resources {
+  display: none;
+}
+
+.design-archives {
+  margin: 0.8em auto;
+  position: relative;
+}
+
+.design-archives ul {
+  list-style-type: none;
+  background: 
+    url('../images/img-lg-horiz-border.png') repeat-x top right,
+    url('../images/img-lg-horiz-border.png') repeat-x bottom left;
+  background-size: 36em;
+  padding: 1.25em 0;
+}
+
+.design-archives .viewall {
+  text-align: center;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  font-size: 1.125em;
+}
+
+.design-archives .previous a, .design-archives .next a {
+  position: absolute;
+  overflow: hidden;
+  width: 2em;
+  height: 1.25em;
+  color: $textColor;
+  text-decoration: none;
+  white-space: nowrap;
+  text-indent: -9999px;
+  -webkit-transition: margin ease-out 0.1s;
+  -moz-transition: margin ease-out 0.1s;
+  -o-transition: margin ease-out 0.1s;
+  transition: margin ease-out 0.1s;
+}
+
+.design-archives .next a:hover, .design-archives .next a:focus {
+  margin-right: -4px;
+}
+
+.design-archives .previous a:hover, .design-archives .previous a:focus {
+  margin-left: -4px;
+}
+
+
+.viewall a, .zen-resources a {
+   color: $textColor;
+   text-decoration: none;
+}
+
+
+.design-archives .next a {
+  right: 0;
+  background: url('../images/img-sprite.png') no-repeat bottom right;
+  background-size: 20em;
+}
+
+.design-archives .previous a {
+  left: 0;
+  background: url('../images/img-sprite.png') no-repeat bottom left;
+  background-size: 20em;
+}
+
+
+.sidebar .wrapper {
+  background: 
+    url('../images/img-lg-horiz-border.png') repeat-x bottom left;
+  background-size: 40em;
+  margin: 0 2px -1px;
+}
+
+.zen-resources {
+  background:  url('../images/img-pointer-guy-sm.png') no-repeat 28% 95%;
+  background-size: 5em;
+  overflow: hidden;
+}
+
+.zen-resources:after, .zen-resources ul:after {
+  width: 9em;
+  height: 9em;
+  content: '';
+  margin: 0 auto;
+  display: block;
+  z-index: -1;
+  position: relative;
+}
+
+.zen-resources:after {
+  margin-top: 9em;
+  background: #ffb14d url('../images/img-halftone.png') repeat;
+  @include applyVendorPrefixes("transform","rotate(45deg) translateY(5.25em) translateX(2.75em)");
+  
+}
+
+.zen-resources ul:after {
+  margin-top: 3.5em;
+  background: #bad1c2 url('../images/img-halftone.png') repeat;
+  @include applyVendorPrefixes("transform","rotate(45deg) translateY(0.2em) translateX(3em)");
+  margin-bottom: -21.5em;
+}
+
+.zen-resources ul {
+  list-style-type: none;
+  margin: 0 auto;
+  font-family: $secondaryFont;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.zen-resources li {
+  display: block;
+  text-align: center;
+  line-height: 1.6;
+}

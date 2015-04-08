@@ -2,19 +2,34 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 1, ../mystuff/_foo.scss */
-.validationError, .requiredToFixError {
-  border: 1px solid yellow;
-  background-color: red;
-  color: white;
+@import url("http://fonts.googleapis.com/css?family=Oswald:400, 800");
+/* line 16, ../mystuff/_foo.scss */
+.explanation {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  -o-column-count: 2;
+  column-count: 2;
 }
 
-/* line 6, ../mystuff/_foo.scss */
-.attention:after, .requiredToFixError:after {
-  content: url("images/stopsign.png");
+/* line 21, ../mystuff/_foo.scss */
+input {
+  font-size: 20px;
+  display: block;
+  border: 1px solid silver;
+  background: linear-gradient(#eee, #fff);
+  transition: all 0.3s ease-out;
+  padding: 5px;
+  color: #555;
+}
+/* line 30, ../mystuff/_foo.scss */
+input:focus {
+  outline: none;
+  background-position: 0 -1.7em;
 }
 
-/* line 9, ../mystuff/_foo.scss */
-.requiredToFixError {
-  border: 1px solid red;
+/* line 49, ../mystuff/_foo.scss */
+body {
+  background: -webkit-radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
+  background: -moz-radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
+  background: -ms-radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
 }

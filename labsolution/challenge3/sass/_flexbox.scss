@@ -1,0 +1,38 @@
+@mixin flexBoxOrder ($order, $bAlign: true) {
+  -webkit-box-ordinal-group: $order;  
+  -moz-box-ordinal-group: $order;     
+  -ms-flex-order: $order;     
+  -webkit-order: $order;  
+  order: $order;
+  @if $bAlign {
+    align-self: flex-start;
+    width: 100%;
+  } 
+}
+
+/* ------- OMG FLEXBOX ------ */
+.page-wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  -ms-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.intro {
+  @include flexBoxOrder(1);
+}
+
+.main {
+  @include flexBoxOrder(3);
+}
+
+.sidebar {
+ @include flexBoxOrder(2, false);
+}

@@ -1,0 +1,24 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+/*!
+ * Copyright (c) 2015. Big Dave G. All rights reserved.
+ */ 
+
+// base colors
+$textColor: #3f3d3a;
+$linkColor: #e5452c;
+$linkHoverColor: complement($linkColor);
+$backgroundColor: #faf3e6;
+$headingColor:  #272625;
+
+// fonts
+$baseFont: "ltc-bodoni-175",serif;
+$secondaryFont: "refrigerator-deluxe",sans-serif;
+
+// content
+$clientName: "Big Dave G";
+
+@import "all";
