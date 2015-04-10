@@ -9,7 +9,7 @@ $debug-browser-support: true;
 
 $browser-minimum-versions: map-merge(
 			$browser-minimum-versions, 
-			(ie: 10)
+			(ie: "8")
 );
 
 $supported-browsers: reject(
