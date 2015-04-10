@@ -4,5 +4,9 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 
-@import "foo"
+// @import "foo"
+
+@import "compass/utilities/sprites";
+@import "businessman/*.png";
+@include all-businessman-sprites;
  
