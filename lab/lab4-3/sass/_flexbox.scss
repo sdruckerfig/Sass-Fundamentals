@@ -1,0 +1,34 @@
+@import "compass/css3/flexbox";
+
+
+@mixin flexBoxOrder ($order, $bAlign: true) {
+  
+
+  @include order($order);   
+  
+  @if $bAlign {
+    align-self: flex-start;
+    width: 100%;
+  } 
+}
+
+/* ------- OMG FLEXBOX ------ */
+.page-wrapper {
+
+  @include flexbox((display: box, box-orient: vertical, direction: column), $version: 1);
+  @include flexbox((display: box, box-orient: vertical, direction: column), $version: 2);
+  @include flexbox((display: box, box-orient: vertical, direction: column), $version: 3);
+  
+}
+
+.intro {
+  @include flexBoxOrder(1);
+}
+
+.main {
+  @include flexBoxOrder(3);
+}
+
+.sidebar {
+ @include flexBoxOrder(2, false);
+}

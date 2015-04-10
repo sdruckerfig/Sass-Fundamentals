@@ -88,3 +88,8 @@ $list : 1 1;
 $theSum: sum($list);
 @debug $theSum;
 
+@import "compass/css3/transform";
+.foo {
+	@include transform(rotate(45deg) translateY(4.75em) translateX(9em));
+}
+

@@ -1,0 +1,95 @@
+@import "compass/css3/opacity";
+
+/* -------INTRO SECTION------ */
+.intro {
+  clear: both;
+  padding-top: 2em;
+  
+  p {
+    margin: 0 auto 1em;
+  }
+  
+  h1 {
+   
+    font : {
+      size: 3em;
+      weight: 400;
+      style: italic;
+    }
+   
+    line-height: 1;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    
+    &:before {
+      font: {
+        family: $secondaryFont;
+        style: normal;
+        size: 1.12rem;
+        weight: bold;
+      }
+      content: $clientName + "\2019s Miraculous";
+      text-transform: uppercase;
+      display: block;
+      letter-spacing: 0.1rem;
+      background: url('../images/img-sprite.png') no-repeat center 0.25em;
+      background-size: 25rem;
+      margin-bottom: 1.3em;
+    }
+  }
+}
+
+
+.summary {
+  p:nth-child(2) {
+    font-style: italic;
+  }
+  a {
+    display: inline-block;
+  }
+}
+
+.intro h2 {
+  font: {
+    family: "french-clarendon-ornamented",sans-serif;
+    size: 2.25em;
+    weight: 400;
+  }
+  padding-top: 4.5em;
+  margin-top: 0.1em;
+  margin-bottom: 0em;
+  letter-spacing: 0.05rem;
+  line-height: 1.275em;
+  background: url('../images/img-bottle.png') no-repeat center 0.75em;
+  background-size: 1.45em;
+  @include opacity(0.5); 
+}
+
+.preamble {
+  margin: 0 auto 1em;
+  p {
+    margin-bottom: 0.15em;
+    &:first-line {
+      text-transform: uppercase;
+    }
+    &:nth-child(1n+3) {
+      text-indent: 1.5em;
+      &:first-line {
+        text-transform: none;
+      }
+    } 
+  }
+  h3 {
+    margin:  0.5em auto 0.55em;
+    padding: 0.5em 0 0.55em;
+    font: {
+      family: "grecian-light-face",sans-serif;
+      size: 1.5em;
+    }
+    line-height: 1;
+    background: 
+      url('../images/img-lg-horiz-border.png') repeat-x top right,
+      url('../images/img-lg-horiz-border.png') repeat-x bottom left;
+    background-size: 13em;
+  }
+}

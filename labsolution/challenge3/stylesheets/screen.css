@@ -494,14 +494,14 @@ h3.archives, h3.resources {
 }
 
 /* -------EXPLANATION------- */
-/* line 3, ../sass/_explanation.scss */
+/* line 7, ../sass/_explanation.scss */
 .explanation {
   padding: 1.75em 0 0;
   margin: 0 auto;
   position: relative;
   background: #faf3e6;
 }
-/* line 9, ../sass/_explanation.scss */
+/* line 13, ../sass/_explanation.scss */
 .explanation h3 {
   font-size: 2.15em;
   font-style: italic;
@@ -510,33 +510,33 @@ h3.archives, h3.resources {
   text-align: center;
   width: 100%;
 }
-/* line 20, ../sass/_explanation.scss */
+/* line 24, ../sass/_explanation.scss */
 .explanation p:nth-child(1n+3) {
   text-indent: 1.5em;
 }
 
-/* line 25, ../sass/_explanation.scss */
+/* line 29, ../sass/_explanation.scss */
 .explanation p:first-line,
 .participation p:first-line,
 .benefits p:first-line {
   text-transform: uppercase;
 }
 
-/* line 31, ../sass/_explanation.scss */
+/* line 35, ../sass/_explanation.scss */
 .explanation p:nth-child(1n+3):first-line,
 .participation p:nth-child(1n+3):first-line,
 .benefits p:nth-child(1n+3):first-line {
   text-transform: none;
 }
 
-/* line 37, ../sass/_explanation.scss */
+/* line 41, ../sass/_explanation.scss */
 .participation {
   padding: 1.5em 0 0.5em;
   background: url("../images/img-lg-horiz-border.png") repeat-x top left;
   background-size: 40em;
   margin: 3em 2px 0;
 }
-/* line 43, ../sass/_explanation.scss */
+/* line 47, ../sass/_explanation.scss */
 .participation h3 {
   font-family: "refrigerator-deluxe", sans-serif;
   font-size: 2.5em;
@@ -546,22 +546,22 @@ h3.archives, h3.resources {
   background: url("../images/img-sprite.png") no-repeat center center;
   background-size: 9em;
 }
-/* line 55, ../sass/_explanation.scss */
+/* line 59, ../sass/_explanation.scss */
 .participation p {
   margin: 0 auto;
 }
-/* line 57, ../sass/_explanation.scss */
+/* line 61, ../sass/_explanation.scss */
 .participation p:nth-child(2) {
   background: url("../images/img-lg-horiz-border.png") repeat-x top left;
   background-size: 44em;
   padding-top: 2em;
 }
-/* line 63, ../sass/_explanation.scss */
+/* line 67, ../sass/_explanation.scss */
 .participation p:nth-child(1n+3) {
   text-indent: 1.5em;
 }
 
-/* line 69, ../sass/_explanation.scss */
+/* line 74, ../sass/_explanation.scss */
 .benefits {
   padding: 1em 0 20em;
   margin: 0 2px;
@@ -569,18 +569,18 @@ h3.archives, h3.resources {
   background-size: 45em;
   position: relative;
 }
-/* line 76, ../sass/_explanation.scss */
+/* line 81, ../sass/_explanation.scss */
 .benefits p {
   margin: 0 auto;
 }
-/* line 78, ../sass/_explanation.scss */
+/* line 83, ../sass/_explanation.scss */
 .benefits p:last-child {
   background: url("../images/img-lg-horiz-border.png") repeat-x bottom left;
   background-size: 44em;
   padding-bottom: 1em;
 }
-/* line 84, ../sass/_explanation.scss */
-.benefits pp:after {
+/* line 89, ../sass/_explanation.scss */
+.benefits p:after {
   content: '';
   display: block;
   width: 100%;
@@ -590,7 +590,7 @@ h3.archives, h3.resources {
   background: url("../images/img-look-right-sm.png") no-repeat center 7.75rem;
   background-size: 8.5rem;
 }
-/* line 96, ../sass/_explanation.scss */
+/* line 101, ../sass/_explanation.scss */
 .benefits h3 {
   margin: 0em auto 0.5em;
   font-family: "grecian-light-face",sans-serif;
@@ -600,7 +600,7 @@ h3.archives, h3.resources {
   padding: 0.25em 0;
 }
 
-/* line 110, ../sass/_explanation.scss */
+/* line 115, ../sass/_explanation.scss */
 .benefitsBeforeAndAfter, .benefits:before, .benefits:after {
   font-size: 3em;
   font-family: "french-clarendon-ornamented",sans-serif;
@@ -612,19 +612,19 @@ h3.archives, h3.resources {
   letter-spacing: 0.03em;
 }
 
-/* line 125, ../sass/_explanation.scss */
+/* line 130, ../sass/_explanation.scss */
 .benefits:before {
   content: 'Apply Liberally';
   bottom: 3.5rem;
 }
 
-/* line 131, ../sass/_explanation.scss */
+/* line 136, ../sass/_explanation.scss */
 .benefits:after {
   content: 'And Regularly!';
   bottom: -13rem;
 }
 
-/* line 139, ../sass/_explanation.scss */
+/* line 144, ../sass/_explanation.scss */
 .requirements h3 {
   font-family: "refrigerator-deluxe", sans-serif;
   font-size: 3em;
@@ -641,7 +641,7 @@ h3.archives, h3.resources {
   background-size: 16em;
 }
 
-/* line 156, ../sass/_explanation.scss */
+/* line 161, ../sass/_explanation.scss */
 .requirements {
   padding: 6.5em 0 2em;
   margin: 0 auto 4.15em;
@@ -650,12 +650,12 @@ h3.archives, h3.resources {
   background-size: 46em;
 }
 
-/* line 165, ../sass/_explanation.scss */
+/* line 170, ../sass/_explanation.scss */
 .requirements p:nth-child(1n+3) {
   text-indent: 1.5em;
 }
 
-/* line 169, ../sass/_explanation.scss */
+/* line 174, ../sass/_explanation.scss */
 .requirements p:last-child {
   font-style: italic;
   position: absolute;
@@ -667,7 +667,7 @@ h3.archives, h3.resources {
   text-indent: 0;
 }
 
-/* line 181, ../sass/_explanation.scss */
+/* line 186, ../sass/_explanation.scss */
 footer {
   background: url("../images/img-lg-horiz-border.png") repeat-x bottom left;
   background-size: 40em;
@@ -678,7 +678,7 @@ footer {
   font-family: "refrigerator-deluxe", sans-serif;
   font-size: 1.15em;
 }
-/* line 199, ../sass/_explanation.scss */
+/* line 204, ../sass/_explanation.scss */
 footer a {
   text-decoration: none;
   background: #272625;
@@ -687,11 +687,11 @@ footer a {
   margin: 0 0.15em;
   letter-spacing: 0.05em;
 }
-/* line 206, ../sass/_explanation.scss */
+/* line 211, ../sass/_explanation.scss */
 footer a:hover, footer a:focus {
   background-color: #e5452c;
 }
-/* line 211, ../sass/_explanation.scss */
+/* line 216, ../sass/_explanation.scss */
 footer:after {
   content: '';
   display: block;
@@ -1288,16 +1288,17 @@ footer:after {
   .requirements {
     -webkit-column-count: 3;
     -moz-column-count: 3;
+    -ms-column-count: 3;
     -o-column-count: 3;
     column-count: 3;
   }
 
-  /* line 85, ../sass/_1050.scss */
+  /* line 82, ../sass/_1050.scss */
   .requirements p:last-child {
     margin-bottom: -1.2rem;
   }
 
-  /* line 89, ../sass/_1050.scss */
+  /* line 86, ../sass/_1050.scss */
   footer {
     margin-top: 0;
   }

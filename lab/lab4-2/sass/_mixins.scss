@@ -1,0 +1,33 @@
+@mixin applyVendorPrefixes ($property, $value) {
+	-webkit-#{$property} : $value;
+	-moz-#{$property} : $value;
+	-ms-#{$property} : $value;
+	-o-#{$property} : $value;
+	#{$property} : $value;
+}
+
+@mixin phone-portrait {
+  @media (min-width:600px) {
+	@content;
+  }
+}
+
+@mixin phone-landscape {
+  @media (min-width:800px) {
+	@content;
+  }
+}
+
+@mixin opacity($opacity) {
+  @if (
+  	type-of($opacity) != "number" 
+    or $opacity < 0 
+    or $opacity > 1
+  ) and unitless($opacity) {
+     @error "Opacity (#{$opacity}) must be a decimal number between 0 and 1"
+  }
+  opacity: $opacity;
+  $opacity-ie : $opacity * 100;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity-ie)";
+  filter: alpha(opacity=$opacity-ie); 
+}

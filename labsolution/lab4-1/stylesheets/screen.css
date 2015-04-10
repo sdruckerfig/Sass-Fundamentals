@@ -458,26 +458,32 @@ h3.archives, h3.resources {
 .zen-resources:after {
   margin-top: 9em;
   background: #ffb14d url("../images/img-halftone.png") repeat;
-  -webkit-transform: "rotate(45deg) translateY(5.25em) translateX(2.75em)";
-  -moz-transform: "rotate(45deg) translateY(5.25em) translateX(2.75em)";
-  -ms-transform: "rotate(45deg) translateY(5.25em) translateX(2.75em)";
-  -o-transform: "rotate(45deg) translateY(5.25em) translateX(2.75em)";
-  transform: "rotate(45deg) translateY(5.25em) translateX(2.75em)";
+  /* Capability transforms2d is not prefixed with -moz because 0.77252% of users are affected which is less than the threshold of 1. */
+  /* Capability transforms2d is prefixed with -ms because 2.6001% of users need it which is more than the threshold of 1%. */
+  /* Creating new -ms context. */
+  -ms-transform: rotate(45deg) translateY(5.25em) translateX(2.75em);
+  /* Capability transforms2d is prefixed with -webkit because 52.08628% of users need it which is more than the threshold of 1%. */
+  /* Creating new -webkit context. */
+  -webkit-transform: rotate(45deg) translateY(5.25em) translateX(2.75em);
+  transform: rotate(45deg) translateY(5.25em) translateX(2.75em);
 }
 
 /* line 163, ../sass/_sidebar.scss */
 .zen-resources ul:after {
   margin-top: 3.5em;
   background: #bad1c2 url("../images/img-halftone.png") repeat;
-  -webkit-transform: "rotate(45deg) translateY(0.2em) translateX(3em)";
-  -moz-transform: "rotate(45deg) translateY(0.2em) translateX(3em)";
-  -ms-transform: "rotate(45deg) translateY(0.2em) translateX(3em)";
-  -o-transform: "rotate(45deg) translateY(0.2em) translateX(3em)";
-  transform: "rotate(45deg) translateY(0.2em) translateX(3em)";
+  /* Capability transforms2d is not prefixed with -moz because 0.77252% of users are affected which is less than the threshold of 1. */
+  /* Capability transforms2d is prefixed with -ms because 2.6001% of users need it which is more than the threshold of 1%. */
+  /* Creating new -ms context. */
+  -ms-transform: rotate(45deg) translateY(0.2em) translateX(3em);
+  /* Capability transforms2d is prefixed with -webkit because 52.08628% of users need it which is more than the threshold of 1%. */
+  /* Creating new -webkit context. */
+  -webkit-transform: rotate(45deg) translateY(0.2em) translateX(3em);
+  transform: rotate(45deg) translateY(0.2em) translateX(3em);
   margin-bottom: -21.5em;
 }
 
-/* line 170, ../sass/_sidebar.scss */
+/* line 171, ../sass/_sidebar.scss */
 .zen-resources ul {
   list-style-type: none;
   margin: 0 auto;
@@ -486,7 +492,7 @@ h3.archives, h3.resources {
   text-align: center;
 }
 
-/* line 178, ../sass/_sidebar.scss */
+/* line 179, ../sass/_sidebar.scss */
 .zen-resources li {
   display: block;
   text-align: center;
@@ -580,7 +586,7 @@ h3.archives, h3.resources {
   padding-bottom: 1em;
 }
 /* line 84, ../sass/_explanation.scss */
-.benefits pp:after {
+.benefits p:after {
   content: '';
   display: block;
   width: 100%;

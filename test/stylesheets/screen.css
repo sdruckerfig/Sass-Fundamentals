@@ -33,3 +33,11 @@ body {
   background: -moz-radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
   background: -ms-radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
 }
+
+/* line 92, ../mystuff/_foo.scss */
+.foo {
+  -moz-transform: rotate(45deg) translateY(4.75em) translateX(9em);
+  -ms-transform: rotate(45deg) translateY(4.75em) translateX(9em);
+  -webkit-transform: rotate(45deg) translateY(4.75em) translateX(9em);
+  transform: rotate(45deg) translateY(4.75em) translateX(9em);
+}

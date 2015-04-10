@@ -1,5 +1,25 @@
-@import "mixins";
+$critical-usage-threshold: 1;
+$graceful-usage-threshold: 1;
+$debug-browser-support: true;
+
 @import "compass/reset";
+@import "compass/support";
+@import "compass/css3/transform";
+@import "compass/css3/columns";
+
+$browser-minimum-versions: map-merge(
+			$browser-minimum-versions, 
+			(ie: "10")
+);
+
+$supported-browsers: reject(
+				browsers(), 
+				opera, 
+				opera-mini, 
+				opera-mobile
+);
+ 
+@import "mixins";
 @import "base"; 
 @import "intro";
 @import "sidebar";
@@ -10,3 +30,4 @@
 @import "1200";
 @import "1300";
 @import "flexbox";
+

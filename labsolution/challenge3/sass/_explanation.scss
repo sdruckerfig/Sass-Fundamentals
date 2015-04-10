@@ -1,4 +1,8 @@
 
+
+
+
+
 /* -------EXPLANATION------- */
 .explanation {
   padding: 1.75em 0 0;
@@ -66,6 +70,7 @@
   }
 }
 
+
 .benefits {
   padding: 1em 0 20em;
   margin: 0 2px;
@@ -81,7 +86,7 @@
       background-size: 44em;
       padding-bottom: 1em;
     }
-    &p:after {
+    &:after {
       content: '';
       display: block;
       width: 100%;
