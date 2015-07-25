@@ -1,0 +1,64 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 64, businessman/*.png */
+.businessman-sprite, .businessman-add, .businessman-delete, .businessman-edit {
+  background-image: url('../images/businessman-sa5713e0e42.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.businessman-add {
+  background-position: 0 0;
+}
+
+/* line 84, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.businessman-delete {
+  background-position: 0 -48px;
+}
+
+/* line 84, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.businessman-edit {
+  background-position: 0 -96px;
+}
+
+/* line 13, ../sass/screen.scss */
+nav input[type=button] {
+  width: 60px;
+  height: 48px;
+}
+
+/* line 18, ../sass/screen.scss */
+nav input[type=button]:focus {
+  outline: 0;
+}
+
+/* line 22, ../sass/screen.scss */
+label {
+  float: left;
+  width: 170px;
+  font-family: Arial;
+  font-size: 20px;
+  padding-top: 7px;
+}
+
+/* line 30, ../sass/screen.scss */
+br {
+  clear: both;
+}
+
+/* line 35, ../sass/screen.scss */
+input[type=text] {
+  font-size: 20px;
+  display: block;
+  border: 1px solid silver;
+  background: linear-gradient(#eee, #fff);
+  padding: 5px;
+  color: #555;
+}
+/* line 43, ../sass/screen.scss */
+input[type=text]:focus {
+  outline: none;
+  background-position: 0 -1.7em;
+}
