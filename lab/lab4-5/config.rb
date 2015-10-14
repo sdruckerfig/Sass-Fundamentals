@@ -1,6 +1,6 @@
 
 require 'compass/import-once/activate'
-require 'sass_paths'
+
 # Require any additional compass plugins here.
 
 # Set this to the root of your project when deployed:
@@ -15,7 +15,6 @@ relative_assets = true
 # output_style = :expanded or :nested or :compact or :compressed
 output_style = :expanded
 
-SassPaths.append('mystuff')
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
 # relative_assets = true
